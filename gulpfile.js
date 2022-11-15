@@ -11,4 +11,4 @@ function scripts() {
         .pipe(gulp.dest('./public'));
 }
 
-gulp.task('default', gulp.parallel(styles, scripts));
+gulp.task('default', gulp.parallel(scripts));
