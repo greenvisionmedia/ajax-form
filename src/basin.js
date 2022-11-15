@@ -22,7 +22,6 @@
                 success.style.display = 'block';
             } else {
                 console.log(JSON.parse(xhr.response));
-                form.style.display = 'none';
                 failure.style.display = 'block';
             }
         };
