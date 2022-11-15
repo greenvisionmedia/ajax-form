@@ -28,8 +28,10 @@
         };
     };
 
-    // Honeypot pseudocode
-    // 1 add hashing to the real input names and labels (?)
-    // 2 add fake inputs (?)
-    // 3 hide fake inputs (??)
+    // Honeypot
+    // This is definitely a 'better than nothing' solution, since plenty of bots probably ignore JS altogether
+    let hp = document.createElement('input');
+    hp.setAttribute('name', '_gotcha');
+    hp.classList.add('hide-visually'); // uses a class defined in the GV client-first embed
+    form.appendChild(hp);
 }
